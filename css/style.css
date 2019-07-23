@@ -1,0 +1,83 @@
+body.index {
+  margin: 0px;
+  font-family: 'PT Sans', sans-serif !important;
+  background: linear-gradient(rgba(43, 62, 110,1.0), rgba(255, 86, 30,1.0)) !important;
+  color: #666 !important;
+  
+}
+
+body.fundo-equipe1{
+  background-image: url(../img/dupla1.png) !important;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px !important;
+  color: #fff;
+}
+
+body.fundo-equipe2{
+  background-image: url(../img/dupla2.png) !important;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tela-basica{
+  height: 100vh;
+}
+
+.apresentacao{
+  height: 100vh;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f15221;
+ 
+}
+
+#luta{
+  color: #;
+  font-size: 60px;
+}
+
+.tela3{
+color: #fff;
+  font-size: 40px;
+}
+
+.tamanho-20{
+  font-size: 20px;
+}
+
+.img-dupla{
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+}
+
+.mt-50{
+  padding-top:200px;
+  color: #666;
+  font-size: 30px;
+}
+
+
+
+
+
+
+/* teste de teste */
+.teste{
+  border: 1px solid #2B3E6E;
+  }
+  
+  
+.teste2{
+  border: 1px solid #f15221;
+}
+
+
+
