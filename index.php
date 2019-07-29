@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -129,19 +129,20 @@ var chartGraph =  new Chart(ctx,{
   type:'bar',
   // conteudo
   data:{
-    labels:["Evoluiu","sativos"],
+    labels:["Evoluiu","sativos","Nandabdo"],
     
     datasets:[{
       label:"Numero de cotações",
-      data:[0,0],
+      data:[9.279.72,0,13.670.32],
       backgroundColor:[
         'rgba(17, 50, 150,0.8)',
-        'rgba(35, 45, 17,0.9)'
+        'rgba(35, 45, 17,0.9)',
+	'rgba(35, 45, 17,0.9)'
       ],
       borderColor :[
         'rgba(17, 50, 150)',
-        'rgb(35, 45, 17)'
-        
+        'rgb(35, 45, 17)',
+	'rgb(35, 45, 17)'
       ],
       
       borderWidth:6
