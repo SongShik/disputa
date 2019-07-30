@@ -49,7 +49,7 @@
 </center>
 <script>
 const instance3 = new Typewriter('#duplas-embate', {
-      strings: ['E vamos ver como sera o desempenho das equipes!', 'O embate será realizado em duplas'],
+      strings: ['E vamos ver como sera o desempenho das equipes!','parece que a equipe nova Nandando esta na frente', 'O embate será realizado em duplas'],
       autoStart: true,
       loop: true,
     });
@@ -129,18 +129,20 @@ var chartGraph =  new Chart(ctx,{
   type:'bar',
   // conteudo
   data:{
-    labels:["Evoluiu","Nandabdo"],
+    labels:["Evoluiu","Nandando","Sativos"],
     
     datasets:[{
       label:"Numero de cotações",
-      data:[9.279.72,13.670.32],
+      data:[9279.72,13670.32,0],
       backgroundColor:[
-        'rgba(17, 50, 150,0.8)',
-	'rgba(35, 45, 17,0.9)'
+        'rgba(17, 50, 150,0.7)',
+	      'rgba(139,0,139,0.7)',
+        'rgba(35, 45, 17,0.7)'
       ],
       borderColor :[
         'rgba(17, 50, 150)',
-	'rgb(35, 45, 17)'
+	      'rgb(139,0,139)',
+        'rgb(35, 45, 17)'
       ],
       
       borderWidth:6
