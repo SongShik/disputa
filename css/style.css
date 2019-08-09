@@ -1,7 +1,7 @@
 body.index {
   margin: 0px;
   font-family: 'PT Sans', sans-serif !important;
-  background: linear-gradient(rgba(43, 62, 110,1.0), rgba(255, 86, 30,1.0)) !important;
+ 
   color: #666 !important;
   
 }
@@ -64,8 +64,13 @@ color: #fff;
   font-size: 30px;
 }
 
+.ate-pagina2-fundo{
+  background: linear-gradient(rgba(43, 62, 110,1.0), rgba(255, 86, 30,1.0)) !important;
+}
 
-
+.da-pagina2-ate-o-final{
+  background: linear-gradient(rgba(255, 86, 30,1.0),rgba(43, 62, 110,1.0)) !important;
+}
 
 
 

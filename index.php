@@ -17,6 +17,7 @@
 </head>
 
 <body class="index">
+  <div class="ate-pagina2-fundo">
 <!-- pagina 1-->
 <div class="tela-basica">
   <div class="apresentacao">
@@ -39,9 +40,9 @@
     });
   </script>
 
-
+</div>
 <!-- pagina 3 tela de equipes e grafico -->
-
+<div class="da-pagina2-ate-o-final">
 <div class="tela-basica tela3 pt-5">
   
 <center>
@@ -105,7 +106,7 @@ const instance3 = new Typewriter('#duplas-embate', {
 
 
 </div>
-
+</div>
 </body>
 
 <!--bootstrap-->
@@ -123,21 +124,120 @@ const instance3 = new Typewriter('#duplas-embate', {
 <script src="js/index.js"></script>
 
 <script>
-var ctx= $(".grafico");
+var canvas = $(".grafico");
+new Chart(canvas, {
+  type: 'line',
+  data: {
+  /* semanas eixo x */
+    labels: ['0','1 Semana','2 Semana'],
+    datasets: [
+      {
+      label: 'Meta Total',
+      yAxisID: 'B',
+      data: [1, 22945.04,285342.28],
+      fill: false,
+      borderColor:[
+        'rgb(235, 19, 19)',
+      ],
+    },
+     {
+      label: 'Evoluiu',
+      yAxisID: 'A',
+      data: [0,9279.72,107377.95],
+      fill: false,
+      borderColor:[
+        "#3e95cd",
+      ],
+    },
+    {
+      label: 'Nandando no dinheiro',
+      yAxisID: 'A',
+      /* data : indice y*/
+      data: [0,13670.32,91450.38],
+      fill: false,
+      borderColor:[
+         "#8e5ea2",
+      ],
+    },
+     {
+      label: 'sativos',
+      yAxisID: 'A',
+      data: [0,0,86513.95],
+      fill: false,
+      borderColor:[
+         "#3cba9f",
+      ],
+    },
+
+    ]
+  },
+
+  options: {
+    tooltips:{
+    position :'nearest',
+    mode:'index',
+    titleFontColor:'#fff',
+    bodyFontColor:'#fff',
+
+     
+    },
+    legend: {
+      position: 'bottom',
+      labels :{
+            fontColor: '#fff',
+            fontSize :15,
+          }
+        },
+    scales: {
+      yAxes: [{
+        id: 'A',
+        type: 'linear',
+        position: 'left',
+        ticks:{
+            fontColor: '#fff',
+            beginAtZero:true
+          }
+      }, {
+        id: 'B',
+        type: 'linear',
+        position: 'right',
+        ticks: {
+          fontColor: '#fff',
+          max: 800000,
+          min: 0
+        },
+        
+      }],
+      xAxes:[{
+          ticks:{
+            fontColor: '#fff',
+            display: true,
+            beginAtZero:true
+            
+          }
+        }
+        
+      ]
+      
+    }
+    
+  }
+});
+/*
 var chartGraph =  new Chart(ctx,{
   // tipo
-  type:'bar',
+  type:'doughnut',
   // conteudo
   data:{
-    labels:["Evoluiu","Nandando","Sativos"],
+    labels:["Evoluiu","Nandando no dinheiro","Sativos"],
     
     datasets:[{
       label:"Numero de cotações",
-      data:[9279.72,13670.32,0],
+      data:[9279.72,13670.32,2300],
       backgroundColor:[
-        'rgba(17, 50, 150,0.7)',
-	      'rgba(139,0,139,0.7)',
-        'rgba(35, 45, 17,0.7)'
+        'rgba(17, 50, 150)',
+	      'rgb(139,0,139)',
+        'rgb(35, 45, 17)'
       ],
       borderColor :[
         'rgba(17, 50, 150)',
@@ -152,8 +252,10 @@ var chartGraph =  new Chart(ctx,{
   // personalizacao
   options:{
     legend: {
-            display: false,
+            display: true,
+            
         },
+    
     scales:{
       yAxes:[{
           ticks:{
@@ -165,7 +267,7 @@ var chartGraph =  new Chart(ctx,{
       ],
       xAxes:[{
           ticks:{
-            display: false,
+            display: true,
             beginAtZero:true
             
           }
@@ -173,9 +275,10 @@ var chartGraph =  new Chart(ctx,{
         
       ]
     }
+    
   }
 
-});
+});*/
 </script>
 
 
