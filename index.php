@@ -126,133 +126,29 @@ const instance3 = new Typewriter('#duplas-embate', {
 <script>
 var canvas = $(".grafico");
 new Chart(canvas, {
-  type: 'line',
-  data: {
-  /* semanas eixo x */
-    labels: ['0','1 Semana','2 Semana'],
-    datasets: [
-      {
-      label: 'Meta Total',
-      yAxisID: 'B',
-      data: [1, 22945.04,285342.28],
-      fill: false,
-      borderColor:[
-        'rgb(235, 19, 19)',
-      ],
-    },
-     {
-      label: 'Evoluiu',
-      yAxisID: 'A',
-      data: [0,9279.72,107377.95],
-      fill: false,
-      borderColor:[
-        "#3e95cd",
-      ],
-    },
-    {
-      label: 'Nandando no dinheiro',
-      yAxisID: 'A',
-      /* data : indice y*/
-      data: [0,13670.32,91450.38],
-      fill: false,
-      borderColor:[
-         "#8e5ea2",
-      ],
-    },
-     {
-      label: 'sativos',
-      yAxisID: 'A',
-      data: [0,0,86513.95],
-      fill: false,
-      borderColor:[
-         "#3cba9f",
-      ],
-    },
 
-    ]
-  },
-
-  options: {
-    tooltips:{
-    position :'nearest',
-    mode:'index',
-    titleFontColor:'#fff',
-    bodyFontColor:'#fff',
-
-     
-    },
-    legend: {
-      position: 'bottom',
-      labels :{
-            fontColor: '#fff',
-            fontSize :15,
-          }
-        },
-    scales: {
-      yAxes: [{
-        id: 'A',
-        type: 'linear',
-        position: 'left',
-        ticks:{
-            fontColor: '#fff',
-            beginAtZero:true
-          }
-      }, {
-        id: 'B',
-        type: 'linear',
-        position: 'right',
-        ticks: {
-          fontColor: '#fff',
-          max: 800000,
-          min: 0
-        },
-        
-      }],
-      xAxes:[{
-          ticks:{
-            fontColor: '#fff',
-            display: true,
-            beginAtZero:true
-            
-          }
-        }
-        
-      ]
-      
-    }
-    
-  }
-});
-/*
-var chartGraph =  new Chart(ctx,{
   // tipo
-  type:'doughnut',
+  type:'bar',
   // conteudo
   data:{
     labels:["Evoluiu","Nandando no dinheiro","Sativos"],
     
     datasets:[{
       label:"Numero de cotações",
-      data:[9279.72,13670.32,2300],
+      data:[107377.95,91450.38,86513.95],
       backgroundColor:[
-        'rgba(17, 50, 150)',
-	      'rgb(139,0,139)',
-        'rgb(35, 45, 17)'
+        '#3e95cd',
+	      '#8e5ea2',
+        '#3cba9f'
       ],
-      borderColor :[
-        'rgba(17, 50, 150)',
-	      'rgb(139,0,139)',
-        'rgb(35, 45, 17)'
-      ],
-      
-      borderWidth:6
+
     }]
 
   },
   // personalizacao
   options:{
     legend: {
-            display: true,
+            display: false,
             
         },
     
@@ -268,7 +164,8 @@ var chartGraph =  new Chart(ctx,{
       xAxes:[{
           ticks:{
             display: true,
-            beginAtZero:true
+            beginAtZero:true,
+            fontColor: '#fff',
             
           }
         }
@@ -278,7 +175,7 @@ var chartGraph =  new Chart(ctx,{
     
   }
 
-});*/
+});
 </script>
 
 
