@@ -135,7 +135,7 @@ new Chart(canvas, {
     
     datasets:[{
       label:"Numero de cotações",
-      data:[107377.95,91450.38,86513.95],
+      data:[290266.29,18783.63 ,254272.56],
       backgroundColor:[
         '#3e95cd',
 	      '#8e5ea2',
