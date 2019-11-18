@@ -24,9 +24,6 @@ body.fundo-equipe2{
   background-size: cover;
 }
 
-.tela-basica{
-  height: 100vh;
-}
 
 .apresentacao{
   height: 100vh;
@@ -38,10 +35,7 @@ body.fundo-equipe2{
  
 }
 
-#luta{
-  color: #;
-  font-size: 60px;
-}
+
 
 .tela3{
 color: #fff;

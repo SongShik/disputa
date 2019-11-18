@@ -41,33 +41,63 @@
   </script>
 
 </div>
-<!-- pagina 3 tela de equipes e grafico -->
+<!-- pagina do ganhador -->
 <div class="da-pagina2-ate-o-final">
-<div class="tela-basica tela3 pt-5">
-  
+
 <center>
 <P id="duplas-embate" class="text-center" style="color:#fff;font-size:40px;"></P>
 </center>
 <script>
 const instance3 = new Typewriter('#duplas-embate', {
-      strings: ['E vamos ver como sera o desempenho das equipes!','parece que a equipe nova Nandando esta na frente', 'O embate será realizado em duplas'],
+      strings: ['Infelismente a campanha acabou','Mas a equipe que chegou mais perto foi a Evoluiu', 'Eai para quem você estava torcendo?'],
       autoStart: true,
       loop: true,
     });
 </script>
-  
+  <div class="tela3 pt-5">
   <div class="row">
-    <div class="col-4 ">
-    <a href="equipe1.php"><img class="rounded mx-auto d-block" src="img/equipe1teste.png"></a>
+    <div class="col-7 ">
+    <img class="mx-auto d-block w-50" src="img/dupla-georgia-dante.jpeg">
     <h1 class="text-center">Evoluiu</h1>
     </div>
-    <div class="col-4">
+    <div class="col-2 ">
 
     <!-- grafico de personalização --><p></p><br>
     <canvas class="grafico" style="height:400px; width:500px;"></canvas>
 
     </div>
-    <div class="col-4">
+    <div class="col-2 ">
+    <img class="w-75" src="img/equipe2teste.png" >
+    <h4 class="text-center">Sativos</h4>
+    </div>
+  </div>
+</div>
+
+<!-- imagem georgia e dante -->
+<div class="tela3 pt-5">  
+  <div class="row">
+    <div class="col-6">
+    <img class="rounded mx-auto d-block w-50" src="img/georgia.jpeg">
+    <h1 class="text-center">Georgia</h1>
+    </div>
+   
+    <div class="col-6">
+    <img class="rounded mx-auto d-block w-50" src="img/dante.jpeg" >
+    <h1 class="text-center">Dante</h1>
+    </div>
+  </div>
+
+</div>
+
+<!-- grafico final -->
+<div class="tela-basica tela3 pt-5">  
+  <div class="row">
+    <div class="col-6">
+    <a href="equipe1.php"><img class="rounded mx-auto d-block" src="img/equipe1teste.png"></a>
+    <h1 class="text-center">Evoluiu</h1>
+    </div>
+   
+    <div class="col-6">
     <a href="equipe2.php"><img class="rounded mx-auto d-block" src="img/equipe2teste.png" ></a>
     <h1 class="text-center">Sativos</h1>
     </div>
@@ -78,8 +108,7 @@ const instance3 = new Typewriter('#duplas-embate', {
   </div>
 </div>
 <br>
-<br>
-<br>
+
 <!-- tela do premio-->
 <div class ="tela-basica tela3">
 <p class="text-center">O premio será:</p>
@@ -132,10 +161,12 @@ new Chart(canvas, {
   // conteudo
   data:{
     labels:["Evoluiu","Nandando no dinheiro","Sativos"],
-    
+    //Evoluiu : dante, georgia
+    //sativos : lucas gabriel
+    //nandando no dinheiro: natalia , bernardo
     datasets:[{
       label:"Numero de cotações",
-      data:[290266.29,18783.63 ,254272.56],
+      data:[750650.73,36376.10,254272.56],
       backgroundColor:[
         '#3e95cd',
 	      '#8e5ea2',
